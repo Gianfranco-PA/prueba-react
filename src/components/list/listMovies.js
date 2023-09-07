@@ -17,7 +17,7 @@ export default async function ListMovies() {
           return (
             <Movie
               key={movie.episode_id}
-              episode_id={movie.episode_id}
+              id={movie.url.slice(-2,-1)}
               title={movie.title}
               release_date={movie.release_date}
               opening_crawl={movie.opening_crawl}
